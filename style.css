@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+}
+
+.nav-bar ul{
+    display: flex;
+    justify-content: end;
+}
+
+.nav-bar li{
+    margin: 20px 20px 0px 0px;
+    list-style: none;
+}
+
+.nav-bar a{
+    text-decoration: none;
+    font-size: .75em;
+    font-weight: 700;
+    color: black;
+}
+
+.nav-bar i{
+    /* font-size: larger; */
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.mid h1{
+    padding: 10px 70px;
+    font-size: 3em;
+    font-weight: 500;
+}
+
+.lower-mid{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0px 0px 70px;
+}
+
+.left{
+    font-size: .8em;
+    line-height: 25px;
+}
+
+.right{
+    width: 20%;
+    font-size: small;
+    margin-right: 20px;
+}
+
+.right p a{
+    text-decoration: none;
+    color: black;
+}
+
+.addToCart{
+    color: black;
+}
+
+.space{
+    display: flex;
+    justify-content: space-between;
+}
+
+.end{
+    width: 100%;
+    height: 34%;
+    background-color: red;
+    background-image: url(David.jpg);
+    background-size: cover;
+    background-position: 0 100%;
+    margin-top: 20px;
+}
+
+@media (max-width: 430px) {
+    .nav-bar ul{
+        justify-content: center;
+    }
+}
+
+@media (max-width: 511px) {
+    .mid h1{
+        padding: 30px 30px;
+        font-size: 2em;
+        font-weight: 500;
+    }
+    .lower-mid{
+        flex-direction: column;
+        padding: 0px 0px 0px 30px;
+    }
+    .left{
+        font-size: .8em;
+        line-height: 20px;
+    }
+    .right{
+        display: flex;
+        width: 100%;
+        font-size: small;
+        margin-top: 20px;
+    }
+    .right a{
+        margin-right: 20px;
+    }
+    .right i{
+        margin-right: 10px;
+    }
+    hr{
+        display: none;
+    }
+}
